@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Callstack in JavaScript
+        </title>
+    </head>
+    <body>
+        <h2>
+            <strong>
+                JavaScript Functions
+            </strong>
+        </h2>
+        <p id ="demo"> </p>
+       <p id="add"> </p>
+        <script>
+            function add(a, b) {
+                return a + b;
+            }
+            function average (a, b) {
+                return add(a, b) / 2
+            }
+            let answer = add(10, 20);
+            let result = average(10, 20);
+            document.getElementById("demo").innerHTML = result;
+            document.getElementById("add").innerHTML = answer;
+        </script>
+    </body>
+</html>
